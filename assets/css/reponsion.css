@@ -1,0 +1,136 @@
+
+
+
+/* mobi  */
+@media  only screen and (max-width:739px){
+    html{
+        font-size: 55.5%;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    .logo{
+        margin-right: 13rem;
+    }
+     .nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color:#f7f7f7;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+    }
+    .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .nav-item{
+        margin: 1rem;
+        padding: 1.2rem 0;
+        border: .1rem solid rgba(243, 146, 146, 0.3);
+        border-left: 0.5rem solid var(--red);
+        padding-left: 2rem;
+        background-color:#fff
+
+    }
+    div .icon-nav-mobi{
+        display:block;
+    }
+    #home{
+        padding-left: 10px;
+        padding-right:10px;                                 
+    }
+    .home-content{
+        display:flex;
+        flex-direction: column;
+        padding-top: 3rem;  
+    }
+    .home-title{
+        font-size: 4rem;
+        color: #333; 
+    }
+    .home-desc{
+        font-size: 1.7rem;
+        color: #666;
+        padding: 1rem 0;
+        line-height: 1.7;
+        text-align: justify;
+    }
+    .home-img-item {
+        margin-top: 4rem;
+        width: 100%;
+    }
+    #speciality{
+        padding: 0 1rem;
+    }
+    .speciality-box-img{
+        right: 0;
+        left: 0;
+        width: 100%;  
+        position: absolute; 
+        top: -130%;  
+    }
+   #popular{
+       padding: 0 1rem;
+   }
+   #reviews{
+    padding: 0 1rem;
+   }
+   #order{
+    padding: 0 1rem;
+   }
+   #map{
+    padding: 0 1rem;
+   }
+   #gallery{
+    padding: 0 1rem;
+   
+}
+}
+
+
+
+/* tablet */
+@media only screen and (min-width:740px)and (max-width:1023px){
+    .nav-item {
+        display: inline-block;
+        font-size: 2rem;
+        padding-left: 1rem;
+        color: var(--text-color);
+    }
+    .logo {
+        font-size: 3rem;
+        color: #666;
+    }
+    
+    .home-content{
+        display:flex;
+        flex-direction: column;
+        padding-top: 3rem;  
+    }
+    .home-img-item {
+        margin-top: 4rem;
+        width: 100%;
+    }
+    #speciality{
+        padding: 0 1rem;
+    }
+    #popular{
+        padding: 0 1rem;
+    }
+    #reviews{
+        padding: 0 1rem;
+    }
+    #order{
+        padding: 0 1rem;
+    }
+    #map{
+        padding: 0 1rem;
+    }
+    #gallery{
+        padding: 0 1rem;
+       }   
+}
+

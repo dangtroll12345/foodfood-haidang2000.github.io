@@ -1,0 +1,18 @@
+let menu = document.querySelector('#menu-bar')
+let nav  = document.querySelector('.nav')
+
+menu.onclick = () => {
+    nav.classList.toggle('active');
+    menu.classList.toggle('active');
+}
+
+
+function loader(){
+    document.querySelector('.loader-container').classList.add('fade-out');
+  }
+  
+  function fadeOut(){
+    setInterval(loader, 2000);
+  }
+  
+  window.onload = fadeOut();
